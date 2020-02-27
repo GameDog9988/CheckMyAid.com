@@ -10,7 +10,13 @@
     <div class="container">
       <header>
         <nav>
-          <ul>
+          <a href="#"
+            ><img
+              src="./images/noun_Hamburger_2767605(copy).png"
+              class="menu-btn"
+              alt="toggle-menu"
+          /></a>
+          <ul class="hide-mobile">
             <li>
               <a href="#">Home</a>
             </li>
@@ -22,43 +28,66 @@
             </li>
           </ul>
         </nav>
-        <div class="title">
-          <h1>Checkmyaid.com</h1>
-        </div>
-        <div class="subhead">
-          <h3>You go the offers, let us help you choose</h3>
-        </div>
       </header>
-    </div>
-    <div class="school-container">
-      <div class="container">
-        <h2>First School</h2>
-        <label for="first-choose-school">Choose your school:</label>
-        <select name="first-choose-school" id="first-choose-school">
-          <option value="universityOfPittsburgh"
-            >University of Pittsburgh</option
-          >
-          <option value="robertMorrisUniversity"
-            >Robert Morris University</option
-          >
-          <option value="carnegieMellonUniversity"
-            >Carnegie Mellon University</option
-          >
-        </select>
-        <h2>Second School</h2>
-        <label for="first-choose-school">Choose your school:</label>
-        <select name="first-choose-school" id="first-choose-school">
-          <option value="universityOfPittsburgh"
-            >University of Pittsburgh</option
-          >
-          <option value="robertMorrisUniversity"
-            >Robert Morris University</option
-          >
-          <option value="carnegieMellonUniversity"
-            >Carnegie Mellon University</option
-          >
-        </select>
+      <div class="title">
+        <h1>Checkmyaid.com</h1>
+      </div>
+      <div class="subhead">
+        <h3>You got the offers, let us help you choose the right school</h3>
       </div>
     </div>
+    <div class="school-container">
+      <div class="first-school-container">
+        <h2>First School</h2>
+        <label for="first-choose-school">Choose your school:</label>
+        <br />
+        <select name="first-choose-school" id="first-choose-school">
+          <option value="universityOfPittsburgh"
+            >University of Pittsburgh</option
+          >
+          <option value="robertMorrisUniversity"
+            >Robert Morris University</option
+          >
+          <option value="carnegieMellonUniversity"
+            >Carnegie Mellon University</option
+          >
+        </select>
+        <br />
+        <br />
+        <br />
+        <input
+          type="text"
+          placeholder="Your total aid"
+          name="first-total-aid"
+          id="first-total-aid"
+        />
+      </div>
+      <div class="second-school-container">
+        <h2>Second School</h2>
+        <label for="second-choose-school">Choose your school:</label>
+        <br />
+        <select name="second-choose-school" id="second-choose-school">
+          <option value="universityOfPittsburgh"
+            >University of Pittsburgh</option
+          >
+          <option value="robertMorrisUniversity"
+            >Robert Morris University</option
+          >
+          <option value="carnegieMellonUniversity"
+            >Carnegie Mellon University</option
+          >
+        </select>
+        <br />
+        <br />
+        <br />
+        <input
+          type="text"
+          placeholder="Your total aid"
+          name="second-total-aid"
+          id="second-total-aid"
+        />
+      </div>
+    </div>
+    <a href="#" class="see-your-score-btn">See Your Score</a>
   </body>
 </html>
