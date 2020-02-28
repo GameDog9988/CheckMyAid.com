@@ -1,11 +1,13 @@
 body {
   font-family: "Montserrat", Tahoma, Geneva, Verdana, sans-serif;
+  color: #f5f5f5;
 }
 
-.container {
+.header-container {
   text-align: center;
-  margin: 0;
+  margin: auto;
   padding: 0.8em 1.1em;
+  background: #ff6f61;
 }
 
 header {
@@ -15,6 +17,7 @@ header {
 
 .menu-btn {
   width: 1.5em;
+  color: #f5f5f5;
 }
 
 .hide-mobile {
@@ -30,23 +33,34 @@ nav ul li {
   list-style-type: none;
 }
 
+nav ul li a {
+  text-decoration: none;
+  color: #f5f5f5;
+}
+
 .school-container {
   display: flex;
   justify-content: center;
-  padding: 2em;
-  background: blue;
+  padding: 1em;
+  background: #8fafe9;
 }
 
 .first-school-container {
   margin: auto;
+  text-align: center;
 }
 
 .second-school-container {
   margin: auto;
+  text-align: center;
+}
+
+select {
+  margin-top: 1em;
 }
 
 .see-your-score-btn {
-  background: black;
+  background: #ff6f61;
   display: block;
   width: 250px;
   padding: 0.5em;
@@ -57,4 +71,44 @@ nav ul li {
   border-radius: 20px;
   margin: 3em auto;
   position: relative;
+}
+
+@media only screen and (min-width: 875px) {
+  h2 {
+    font-size: 2em;
+  }
+
+  .menu-btn {
+    display: none;
+  }
+
+  .hide-mobile {
+    display: flex;
+  }
+
+  nav ul li {
+    margin: 0 1em 0 1em;
+  }
+
+  label {
+    font-size: 1.3em;
+  }
+
+  .first-school-container {
+    margin-left: 25%;
+  }
+
+  .second-school-container {
+    margin-right: 25%;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .first-school-container {
+    margin-left: 33%;
+  }
+
+  .second-school-container {
+    margin-right: 33%;
+  }
 }
