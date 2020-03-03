@@ -1,13 +1,15 @@
 body {
   font-family: "Montserrat", Tahoma, Geneva, Verdana, sans-serif;
   color: #f5f5f5;
+  background: #8fafe9;
+  margin: 0;
+  padding: 0;
 }
 
 .header-container {
-  text-align: center;
-  margin: auto;
-  padding: 0.8em 1.1em;
   background: #ff6f61;
+  text-align: center;
+  padding: 1em;
 }
 
 header {
@@ -26,6 +28,13 @@ header {
 
 .title {
   font-size: 1.3em;
+  font-family: "Rufina", sans;
+  font-weight: normal;
+  letter-spacing: 5px;
+  margin-bottom: 1.3em;
+}
+
+.subhead {
   margin-bottom: 2em;
 }
 
@@ -38,21 +47,38 @@ nav ul li a {
   color: #f5f5f5;
 }
 
-.school-container {
+.border {
+  margin: auto;
+  width: 100px;
+  height: 10px;
+  background: #ff6f61;
+  margin-bottom: 1em;
+}
+
+.school-container,
+.score-container {
   display: flex;
   justify-content: center;
   padding: 1em;
   background: #8fafe9;
 }
 
-.first-school-container {
+.first-school-container,
+.second-school-container,
+.first-score-container,
+.second-score-container {
   margin: auto;
   text-align: center;
 }
 
-.second-school-container {
-  margin: auto;
-  text-align: center;
+.first-school-container h2,
+.second-school-container h2 {
+  margin-bottom: 0.5em;
+}
+
+.first-score,
+.second-score {
+  font-size: 10em;
 }
 
 select {
@@ -73,6 +99,14 @@ select {
   position: relative;
 }
 
+.footer-container {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 @media only screen and (min-width: 875px) {
   h2 {
     font-size: 2em;
@@ -84,6 +118,14 @@ select {
 
   .hide-mobile {
     display: flex;
+  }
+
+  .title {
+    font-size: 2em;
+  }
+
+  .subhead {
+    font-size: 1.3em;
   }
 
   nav ul li {
@@ -105,10 +147,18 @@ select {
 
 @media only screen and (min-width: 1600px) {
   .first-school-container {
-    margin-left: 33%;
+    margin-left: 30%;
   }
 
   .second-school-container {
-    margin-right: 33%;
+    margin-right: 30%;
+  }
+
+  .title {
+    font-size: 3em;
+  }
+
+  h2 {
+    font-size: 2.5em;
   }
 }
