@@ -1,15 +1,14 @@
-html,
 body {
   font-family: "Montserrat", Tahoma, Geneva, Verdana, sans-serif;
   color: #f5f5f5;
-  background: linear-gradient(180deg, #8fafe9 0%, #7da3e9 100%);
-  height: 100%;
+  background: #8fafe9;
   margin: 0;
   padding: 0;
 }
 
 .red-gradient {
   background: linear-gradient(180deg, #ff6f61 0%, #fda198 100%);
+  height: 100vh;
 }
 
 .blue-gradient {
