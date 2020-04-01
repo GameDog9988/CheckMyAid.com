@@ -21,18 +21,42 @@ body {
   padding: 1em;
 }
 
-header {
-  display: flex;
-  justify-content: flex-end;
-}
-
 .menu-btn {
   width: 1.5em;
-  color: #f5f5f5;
+  display: block;
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
 
-.hide-mobile {
+.menu {
+  height: auto;
+}
+
+.menu ul {
+  margin: auto;
+  max-height: 0;
+  padding: 0;
+  display: block;
+  overflow: hidden;
+  transition: max-height 0.3s;
+}
+
+.menu ul a {
+  display: inline-block;
+  font-weight: bold;
+  text-align: center;
+  padding: 1em 0 1em 0;
+  margin: auto;
+  width: 100%;
+}
+
+#menu-toggle {
   display: none;
+}
+
+#menu-toggle:checked ~ ul {
+  max-height: 350px;
 }
 
 .title {
@@ -90,10 +114,6 @@ nav ul li a {
   margin: 0.5em;
 }
 
-.first-score-title,
-.second-score-title {
-}
-
 select {
   margin-top: 1em;
 }
@@ -120,6 +140,16 @@ select {
   justify-content: center;
 }
 
+@media only screen and (max-width: 875) {
+  #menu-toggle:checked ~ ul {
+    max-height: 350px;
+  }
+
+  .header-container {
+    width: 90%;
+  }
+}
+
 @media only screen and (min-width: 875px) {
   h2 {
     font-size: 2em;
@@ -129,8 +159,16 @@ select {
     display: none;
   }
 
-  .hide-mobile {
+  .menu ul {
     display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    max-height: 100%;
+    width: 100%;
+  }
+
+  .menu ul a {
+    display: inline-block;
   }
 
   .title {
